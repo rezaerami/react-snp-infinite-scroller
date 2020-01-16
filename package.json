@@ -1,6 +1,6 @@
 {
   "name": "react-infinite-scroller-snp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "babel": {
     "presets": [
@@ -20,7 +20,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/hooks -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
