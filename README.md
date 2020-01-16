@@ -1,7 +1,4 @@
-<div>
-    <img src="logo.png" width="250px" />
-    <h1>react-infinite-scroller-snp</h1>
-</div>
+<h1>react-infinite-scroller-snp</h1>
 <div>
     <section>
       <h2>
