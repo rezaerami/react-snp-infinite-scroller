@@ -1,6 +1,6 @@
 {
   "name": "react-snp-infinite-scroller",
-  "version": "0.1.2",
+  "version": "0.1.3.alpha.1",
   "private": false,
   "homepage": "https://rezaerami.github.io/docs-react-snp-infinite-scroller/",
   "repository": {
@@ -45,6 +45,6 @@
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
-    "babel-loader": "^7.1.5"
+    "babel-loader": "^8.0.6"
   }
 }
