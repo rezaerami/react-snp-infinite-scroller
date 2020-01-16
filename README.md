@@ -1,4 +1,4 @@
-<div>
+<div style="text-align: center">
     <img src="logo.png" width="250px" />
     <h1>react-infinite-scroller-snp</h1>
 </div>
