@@ -1,10 +1,14 @@
-<div className="container">
+<div style="text-align: center">
+    <img src="logo.png" />
+    <h1>react-infinite-scroller-snp</h1>
+</div>
+<div>
     <section>
       <h2>
         <span>Step 1: </span>
         <b>Install it</b>
       </h2>
-      <p>Install react-infinite-scroller-snp using npm</p>
+      <p>Install react-infinite-scroller-snp using <a target="_blank" href="https://www.npmjs.com/package/react-infinite-scroller-snp">npm</a></p>
       <pre>npm install --save react-infinite-scroller-snp</pre>
     </section>
     <section>
