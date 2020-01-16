@@ -1,7 +1,4 @@
 <div>
-    <a href="https://github.com/rezaerami/react-infinite-scroller-snp">
-        <img src="logo.jpg" />
-    </a>
     <h1>react-snp-infinite-scroller</h1>
     <section>
       <h2>
