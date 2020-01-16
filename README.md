@@ -1,5 +1,7 @@
 <div>
     <h1>react-snp-infinite-scroller</h1>
+    <a href="https://github.com/rezaerami/react-snp-infinite-scroller/">Github</a> | 
+    <a href="https://rezaerami.github.io/docs-react-snp-infinite-scroller/">Documentation</a>
     <section>
       <h2>
         <span>Step 1: </span>
