@@ -1,5 +1,5 @@
 <div>
-    <img src="logo.jpg" width="600" />
+    <img src="logo.jpg" />
     <h1>react-infinite-scroller-snp</h1>
     <section>
       <h2>
