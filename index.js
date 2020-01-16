@@ -1,2 +1,2 @@
-import { useElementScroll, useWindowScroll } from './src';
+import { useElementScroll, useWindowScroll } from './hooks';
 export { useElementScroll, useWindowScroll }
