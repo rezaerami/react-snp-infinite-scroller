@@ -1,12 +1,14 @@
 <div>
-    <img src="logo.jpg" />
+    <a href="https://github.com/rezaerami/react-infinite-scroller-snp">
+        <img src="logo.jpg" />
+    </a>
     <h1>react-snp-infinite-scroller</h1>
     <section>
       <h2>
         <span>Step 1: </span>
         <b>Install it</b>
       </h2>
-      <p>Install react-snp-infinite-scroller using <a target="_blank" href="https://www.npmjs.com/package/react-infinite-scroller-snp">npm</a></p>
+      <p>Install react-snp-infinite-scroller using <a target="_blank" href="https://www.npmjs.com/package/react-snp-infinite-scroller">npm</a></p>
       <pre>npm install --save react-snp-infinite-scroller</pre>
     </section>
     <section>
