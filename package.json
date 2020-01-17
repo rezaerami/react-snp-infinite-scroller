@@ -5,6 +5,7 @@
   "homepage": "https://rezaerami.github.io/docs-react-snp-infinite-scroller/",
   "main": "index.js",
   "author": "Reza Erami",
+  "license": "MIT",
   "keywords": ["react", "infinite-scroller", "react-snp-infinite-scroller"],
   "description": "Make window or an element call a function each time that it reaches to the end of the page",
   "repository": {
