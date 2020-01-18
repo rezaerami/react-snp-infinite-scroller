@@ -1,11 +1,16 @@
 {
-  "name": "react-infinite-scroller-snp",
-  "version": "0.1.1",
+  "name": "react-snp-infinite-scroller",
+  "version": "1.0.2",
   "private": false,
-  "homepage": "https://github.com/rezaerami/react-infinite-scroller-snp/",
+  "homepage": "https://rezaerami.github.io/docs-react-snp-infinite-scroller/",
+  "main": "index.js",
+  "author": "Reza Erami",
+  "license": "MIT",
+  "keywords": ["react", "infinite-scroller", "react-snp-infinite-scroller"],
+  "description": "Make window or an element call a function each time that it reaches to the end of the page",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/rezaerami/react-infinite-scroller-snp/"
+    "type": "git",
+    "url": "https://github.com/rezaerami/react-snp-infinite-scroller/"
   },
   "babel": {
     "presets": [
@@ -43,6 +48,8 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
-    "@babel/preset-react": "^7.8.3"
+    "@babel/core": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6"
   }
 }
