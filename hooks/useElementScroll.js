@@ -1,11 +1,12 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 
-export default (
+export default ({
   reference,
-  callback = () => {},
+  callback = () => {
+  },
   hasMore = true,
   threshold = 100,
-) => {
+}) => {
   const handleScroll = () => {
     if (
       reference.current.scrollHeight <=
