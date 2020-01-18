@@ -1,25 +1,26 @@
-import { useEffect, useRef } from 'react';
+import {useEffect} from 'react';
 
-export default (ref, fn, threshold = 100) => {
-  const doFn = useRef(false);
+export default ({
+  reference,
+  callback = () => {},
+  hasMore = true,
+  threshold = 100,
+}) => {
   const handleScroll = () => {
     if (
-      ref.current.scrollHeight <=
-      ref.current.offsetHeight + ref.current.scrollTop + threshold
+      reference.current.scrollHeight <=
+      reference.current.offsetHeight +
+      reference.current.scrollTop +
+      threshold &&
+      hasMore
     ) {
-      if (!doFn.current) {
-        fn();
-        doFn.current = true;
-      }
-    } else if (doFn.current) {
-      doFn.current = false;
+      callback();
     }
   };
   useEffect(() => {
-    doFn.current = false;
-    ref.current.addEventListener('scroll', handleScroll);
+    reference.current.addEventListener('scroll', handleScroll);
     return () => {
-      ref.current.removeEventListener('scroll', handleScroll);
+      reference.current.removeEventListener('scroll', handleScroll);
     };
-  }, [fn]);
+  }, [hasMore]);
 };
