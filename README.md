@@ -24,7 +24,7 @@
         <b>Use it</b>
       </h2>
       <p>Make window or an element call a function each time that it reaches to the end of the page</p>
-      <pre>useElementScroll(elementRef, fn, threshold);
-useWindowScroll(fn, threshold);</pre>
+      <pre>useElementScroll({reference, callback, hasMore, threshold});
+useWindowScroll({callback, hasMore, threshold});</pre>
     </section>
   </div>
