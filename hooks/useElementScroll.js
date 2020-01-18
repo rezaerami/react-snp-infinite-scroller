@@ -1,19 +1,26 @@
 import { useEffect } from 'react';
 
-export default (ref, fn, hasMore, threshold = 100) => {
+export default (
+  reference,
+  callback = () => {},
+  hasMore = true,
+  threshold = 100,
+) => {
   const handleScroll = () => {
     if (
-      ref.current.scrollHeight <=
-      ref.current.offsetHeight + ref.current.scrollTop + threshold
-      && hasMore
+      reference.current.scrollHeight <=
+      reference.current.offsetHeight +
+      reference.current.scrollTop +
+      threshold &&
+      hasMore
     ) {
-        fn();
+      callback();
     }
   };
   useEffect(() => {
-    ref.current.addEventListener('scroll', handleScroll);
+    reference.current.addEventListener('scroll', handleScroll);
     return () => {
-      ref.current.removeEventListener('scroll', handleScroll);
+      reference.current.removeEventListener('scroll', handleScroll);
     };
   }, [hasMore]);
 };
