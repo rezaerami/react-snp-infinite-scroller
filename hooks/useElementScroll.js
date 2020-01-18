@@ -2,8 +2,7 @@ import {useEffect} from 'react';
 
 export default ({
   reference,
-  callback = () => {
-  },
+  callback = () => {},
   hasMore = true,
   threshold = 100,
 }) => {
