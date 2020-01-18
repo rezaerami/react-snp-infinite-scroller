@@ -1,25 +1,19 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
-export default (fn, threshold = 100) => {
-  const doFn = useRef(false);
+export default (fn, hasMore, threshold = 100) => {
   const handleScroll = () => {
     if (
       document.body.scrollHeight <=
       window.innerHeight + window.pageYOffset + threshold
+      && hasMore
     ) {
-      if (!doFn.current) {
         fn();
-        doFn.current = true;
-      }
-    } else if (doFn.current) {
-      doFn.current = false;
     }
   };
   useEffect(() => {
-    doFn.current = false;
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [fn]);
+  }, [hasMore]);
 };
