@@ -15,5 +15,5 @@ export default ({ callback = () => {}, hasMore = true, threshold = 100 }) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [hasMore]);
+  }, [hasMore,threshold]);
 };
