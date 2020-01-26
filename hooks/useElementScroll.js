@@ -21,5 +21,5 @@ export default (ref, fn, threshold = 100) => {
     return () => {
       ref.current.removeEventListener('scroll', handleScroll);
     };
-  }, [fn]);
+  }, [fn,threshold]);
 };

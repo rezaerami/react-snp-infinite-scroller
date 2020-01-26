@@ -21,5 +21,5 @@ export default (fn, threshold = 100) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [fn]);
+  }, [fn,threshold]);
 };
