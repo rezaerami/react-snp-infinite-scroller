@@ -22,5 +22,5 @@ export default ({
     return () => {
       reference.current.removeEventListener('scroll', handleScroll);
     };
-  }, [hasMore]);
+  }, [hasMore,threshold]);
 };
